@@ -1,0 +1,43 @@
+.gridWrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    height: 60vh;
+    width: 60vw;
+}
+.wrapper{
+    border: 1px solid rgb(0, 0, 0);
+}
+.hide{
+    display: none!important;
+}
+.done{
+    background-color: rgb(43, 43, 43);
+}
+#square{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.redSquare{
+    background-color: red;
+
+}
+.purpleSquare{
+    background-color: purple;
+}
+.pinkSquare{
+    background-color: pink;
+}
+.yellowSquare{
+    background-color: yellow;
+}
+.greenSquare{
+    background-color: green;
+}
+.blueSquare{
+    background-color: blue;
+}
+
