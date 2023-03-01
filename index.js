@@ -133,3 +133,8 @@ const handleWinAlert=()=>{
     $alert.textContent = 'Ganaste! Si queres volver a jugar toca empezar'
 }
 
+const removeOldBoard=()=>{
+    document.querySelectorAll('.wrapper').forEach(function($divWrapper){
+        $divWrapper.remove()
+    })
+}
