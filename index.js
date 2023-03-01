@@ -65,3 +65,24 @@ const handleClick=()=>{
     }
 }
 
+const handleUserPlay=($square)=>{
+    handleSquareVisibility($square, '1')
+    if($initialSquare === null){
+        $initialSquare = $square
+    }else{
+        if($initialSquare === $square){
+            return
+        }else{
+            if(handleAcert($initialSquare,$square)){
+                removeSquare($initialSquare)
+                removeSquare($square)
+            }else{
+                handleSquareVisibility2($initialSquare)
+                handleSquareVisibility2($square)
+                handleErrors()
+            }
+        }
+        $initialSquare = null
+    }
+}
+
