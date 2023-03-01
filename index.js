@@ -48,3 +48,11 @@ const startGame=()=>{
     handleStartGameAlert()
     handleClick()
 }
+
+const handleStartGameAlert=()=>{
+    const $alert = document.querySelector('#estadoDeJuego')
+    $alert.classList.remove('alert-success')
+    $alert.classList.add('alert-primary')
+    $alert.textContent = 'Suerte jugador!'
+}
+
