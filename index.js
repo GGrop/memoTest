@@ -16,6 +16,18 @@ const configureGame=()=>{
     const shuffledColors = handleColors()
     handleRandomBoard(shuffledColors)
 }
+
+const createWrappers=()=>{
+    for(let i=0; i<12;i++){
+        const $divWrapper = document.createElement('div')
+        $divWrapper.className ='wrapper'
+        const $divSquare = document.createElement('div')
+        $divSquare.id = 'square'
+        $divWrapper.appendChild($divSquare)
+        $board.appendChild($divWrapper)
+    }
+}
+
 const handleColors=()=>{
     const colorsClass = ['redSquare', 'purpleSquare', 'pinkSquare','yellowSquare', 'greenSquare', 'blueSquare']
     const pairColorsClass = colorsClass.concat(colorsClass)
