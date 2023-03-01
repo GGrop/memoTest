@@ -73,7 +73,7 @@ const handleUserPlay=($square)=>{
         if($initialSquare === $square){
             return
         }else{
-            if(handleAcert($initialSquare,$square)){
+            if(handlePlayerHit($initialSquare,$square)){
                 removeSquare($initialSquare)
                 removeSquare($square)
             }else{
