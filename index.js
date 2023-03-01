@@ -86,3 +86,12 @@ const handleUserPlay=($square)=>{
     }
 }
 
+const handleSquareVisibility=($square)=>{
+        $square.style.opacity='1'
+}
+const handleSquareVisibility2=($square)=>{
+    setTimeout(function(){
+        $square.style.opacity='0'
+    },300)
+}
+
