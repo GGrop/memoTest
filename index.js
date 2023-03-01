@@ -36,6 +36,7 @@ const handleColors=()=>{
     })
     return pairColorsClass
 }
+
 const handleRandomBoard=(shuffledColors)=>{
     const $squares = document.querySelectorAll('#square')
     $squares.forEach(function($square,i){
@@ -43,3 +44,7 @@ const handleRandomBoard=(shuffledColors)=>{
     })
 }
 
+const startGame=()=>{
+    handleStartGameAlert()
+    handleClick()
+}
