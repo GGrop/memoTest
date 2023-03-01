@@ -121,3 +121,8 @@ const handleErrors=()=>{
     errors++
     $errors.textContent = errors
 }
+const handleRestartErrors=()=>{
+    errors=0
+    $errors.textContent = errors
+}
+
