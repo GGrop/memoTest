@@ -126,3 +126,10 @@ const handleRestartErrors=()=>{
     $errors.textContent = errors
 }
 
+const handleWinAlert=()=>{
+    const $alert = document.querySelector('#estadoDeJuego')
+    $alert.classList.remove('alert-primary')
+    $alert.classList.add('alert-success')
+    $alert.textContent = 'Ganaste! Si queres volver a jugar toca empezar'
+}
+
