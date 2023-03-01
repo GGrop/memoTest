@@ -13,6 +13,7 @@ $buttonStart.onclick=function(){
 
 const configureGame=()=>{
     $buttonStart.classList.add('hide');
+    handleRestartErrors()
     const shuffledColors = handleColors()
     handleRandomBoard(shuffledColors)
 }
@@ -111,7 +112,6 @@ const checkWinCondition=()=>{
     let $remainingSquares = document.querySelectorAll('#square').length
     if($remainingSquares===0){
         $buttonStart.classList.remove('hide');
-        handleRestartErrors()
         handleWinAlert()
         removeOldBoard()
     }
