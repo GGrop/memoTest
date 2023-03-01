@@ -107,3 +107,13 @@ const removeSquare=($square)=>{
     },500)
 }
 
+const checkWinCondition=()=>{
+    let $remainingSquares = document.querySelectorAll('#square').length
+    if($remainingSquares===0){
+        $buttonStart.classList.remove('hide');
+        handleRestartErrors()
+        handleWinAlert()
+        removeOldBoard()
+    }
+}
+
