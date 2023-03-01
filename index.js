@@ -99,3 +99,11 @@ const handlePlayerHit=($initialSquare,$square)=>{
     return $initialSquare.className === $square.className
 }
 
+const removeSquare=($square)=>{
+    setTimeout(function(){
+        $square.parentElement.classList.add('done')
+        $square.remove()
+        checkWinCondition()
+    },500)
+}
+
