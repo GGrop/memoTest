@@ -117,3 +117,7 @@ const checkWinCondition=()=>{
     }
 }
 
+const handleErrors=()=>{
+    errors++
+    $errors.textContent = errors
+}
