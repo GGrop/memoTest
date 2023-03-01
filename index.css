@@ -14,7 +14,7 @@
 .done{
     background-color: rgb(43, 43, 43);
 }
-#square{
+.square{
     width: 100%;
     height: 100%;
     opacity: 0;

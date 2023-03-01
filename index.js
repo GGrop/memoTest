@@ -23,7 +23,7 @@ const createWrappers=()=>{
         const $divWrapper = document.createElement('div')
         $divWrapper.className ='wrapper'
         const $divSquare = document.createElement('div')
-        $divSquare.id = 'square'
+        $divSquare.className = 'square'
         $divWrapper.appendChild($divSquare)
         $board.appendChild($divWrapper)
     }
@@ -39,9 +39,12 @@ const handleColors=()=>{
 }
 
 const handleRandomBoard=(shuffledColors)=>{
-    const $squares = document.querySelectorAll('#square')
+    const $squares = document.querySelectorAll('.square')
     $squares.forEach(function($square,i){
-        $square.classList = shuffledColors[i]
+        $square.classList.add(shuffledColors[i])
+        
+        // $square.className = 'shuffledColors[i]'
+        // console.log($square.classList)
     })
 }
 
@@ -60,7 +63,7 @@ const handleStartGameAlert=()=>{
 const handleClick=()=>{
     $board.onclick = function(e){
         let $square = e.target
-        if($square.id === 'square'){
+        if($square.classList.contains('square')){
             handleUserPlay($square)
         }
     }
@@ -109,7 +112,7 @@ const removeSquare=($square)=>{
 }
 
 const checkWinCondition=()=>{
-    let $remainingSquares = document.querySelectorAll('#square').length
+    let $remainingSquares = document.querySelectorAll('.square').length
     if($remainingSquares===0){
         $buttonStart.classList.remove('hide');
         handleWinAlert()
