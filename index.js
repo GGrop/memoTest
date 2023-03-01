@@ -56,3 +56,12 @@ const handleStartGameAlert=()=>{
     $alert.textContent = 'Suerte jugador!'
 }
 
+const handleClick=()=>{
+    $board.onclick = function(e){
+        let $square = e.target
+        if($square.id === 'square'){
+            handleUserPlay($square)
+        }
+    }
+}
+
