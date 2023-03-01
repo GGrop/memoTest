@@ -95,3 +95,7 @@ const handleSquareVisibility2=($square)=>{
     },300)
 }
 
+const handlePlayerHit=($initialSquare,$square)=>{
+    return $initialSquare.className === $square.className
+}
+
