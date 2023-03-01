@@ -1,0 +1,26 @@
+{
+  "name": "memotest",
+  "version": "1.0.0",
+  "description": "memoTest de r-programa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-dev":"cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GGrop/memoTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GGrop/memoTest/issues"
+  },
+  "homepage": "https://github.com/GGrop/memoTest#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "cypress": "^12.7.0"
+  }
+}
