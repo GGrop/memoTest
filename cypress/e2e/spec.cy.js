@@ -66,6 +66,7 @@ context('MemoTest',()=>{
     })
     cy.get('#errors').should('have.text', ERRORS)
     cy.get('#estadoDeJuego').should('have.text', WIN_ALERT)
+    
   })
 
 })
