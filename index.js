@@ -69,6 +69,7 @@ const handleClick=()=>{
     }
 }
 
+
 const handleUserPlay=($square)=>{
     handleSquareVisibility($square, '1')
     if($initialSquare === null){
